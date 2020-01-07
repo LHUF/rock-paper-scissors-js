@@ -60,4 +60,10 @@ function game() {
 
 let results = game();
 console.log = results;
+
+if (computerScore > playerScore) {
+    alert("You lost")
+} else if (playerScore > computerScore) {
+    alert("You won")
+}
 </script>
