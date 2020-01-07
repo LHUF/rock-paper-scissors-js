@@ -17,25 +17,22 @@ function playRound(playerSelection, computerSelection) {
     
     computerSelection = computerPlay();
     
-    if (playerSelection == computerSelection) {  //checks for draw
+    if (playerSelection.toLowerCase() == computerSelection) {  //checks for draw
         return "This round was a draw!";
-    } else if (playerSelection == "rock" && computerSelection == "paper") {
+    } else if (playerSelection.toLowerCase() == "rock" && computerSelection == "paper") {
         return "You lost... paper beats rock...";
-    } else if (playerSelection == "rock" && computerSelection == "scissors") {
+    } else if (playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") {
         return "You won! Rock beats scissors";
-    } else if (playerSelection == "paper" && computerSelection == "rock") {
+    } else if (playerSelection.toLowerCase() == "paper" && computerSelection == "rock") {
         return "You won! Paper beats rock";
-    } else if (playerSelection == "paper" && computerSelection == "scissors") {
+    } else if (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors") {
         return "You lost... scissors beats paper...";
-    } else if (playerSelection == "scissors" && computerSelection == "rock") {
+    } else if (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") {
         return "You lost... rock beats scissors...";
-    } else if (playerSelection == "scissors" && computerSelection == "paper") {
+    } else if (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") {
         return "You won! Scissors beats paper";
     }
     
 }
-
-result = playRound("scissors");
-console.log(result);
 
 </script>
