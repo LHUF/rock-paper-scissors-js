@@ -1,3 +1,5 @@
+<body>Open developer console for individual round results!</body>
+
 <script>
 
 let computerScore = 0;
@@ -62,8 +64,10 @@ let results = game();
 console.log = results;
 
 if (computerScore > playerScore) {
-    alert("You lost")
+    alert("You lost");
 } else if (playerScore > computerScore) {
-    alert("You won")
+    alert("You won");
+} else if (playerScore == computerScore) {
+    alert("Draw!");
 }
 </script>
