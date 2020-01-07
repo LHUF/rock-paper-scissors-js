@@ -16,6 +16,7 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
     
     computerSelection = computerPlay();
+    playerSelection = prompt("Choose: rock, paper or scissors");
     
     if (playerSelection.toLowerCase() == computerSelection) {  //checks for draw
         return "This round was a draw!";
@@ -34,5 +35,8 @@ function playRound(playerSelection, computerSelection) {
     }
     
 }
+
+result = playRound();
+console.log(result);
 
 </script>
